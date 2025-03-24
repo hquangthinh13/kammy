@@ -111,7 +111,9 @@ header:hover{
 .user-message {
     align-self: flex-end;
     margin-left: auto;
-    background-color: #0B21C0;
+    /* background-color: #0B21C0; */
+    background: rgb(6,10,68);
+    background: linear-gradient(90deg, rgba(6,10,68,1) 0%, rgba(41,115,255,1) 100%); 
     color: white;
     border-radius: 18px 18px 0 18px;
     padding: 12px 18px;
@@ -119,7 +121,10 @@ header:hover{
 }
 
 .user-message:hover{
-    background-color: #060A44;
+    /* background-color: #060A44; */
+    background: rgb(6,10,68);
+    background: linear-gradient(90deg, rgba(6,10,68,0.9) 0%, rgba(41,115,255,0.8) 100%); 
+
 }
 
 .bot-message {
@@ -210,7 +215,9 @@ header:hover{
 
 .chat-input button {
     font-family: "Space Grotesk", sans-serif;
-    background-color: #0B21C0;
+    /* background-color: #0B21C0; */
+    background: rgb(6,10,68);
+    background: linear-gradient(90deg, rgba(6,10,68,1) 0%, rgba(41,115,255,1) 100%); 
     color: white;
     border: none;
     border-radius: 25px;
@@ -222,5 +229,6 @@ header:hover{
 }
 
 .chat-input button:hover {
-    background-color: #060A44;
+    background: rgb(6,108,126);
+    background: linear-gradient(90deg, rgba(6,108,126,1) 0%, rgba(23,156,180,1) 50%, rgba(102,224,244,1) 100%);     
 }
