@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon_light.svg" type="image/x-icon">
+    <link rel="icon" href="image/icon_dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin-script.js"></script>
+    <title>Kammy Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/Kammy.svg" alt="Logo" class="logo">
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="section">
+                <h2>Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">2,487</div>
+                        <div class="stat-label">Total Queries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">94%</div>
+                        <div class="stat-label">Response Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">87%</div>
+                        <div class="stat-label">User Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">Daily Active Users</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Model Performance</h2>
+                <div class="chart-container">
+                    <div class="chart" id="performanceChart">
+                        <!-- Chart placeholder - would be implemented with JavaScript charting library -->
+                        <img src="/api/placeholder/800/300" alt="Performance Chart">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-grid">
+                <div class="section">
+                    <h2>Recent Queries</h2>
+                    <div class="query-list">
+                        <div class="query-item">
+                            <div class="query-text">"I need a lightweight laptop for college with good battery life."</div>
+                            <div class="query-meta">
+                                <span class="query-time">Today, 14:32</span>
+                                <span class="query-category">Electronics</span>
+                            </div>
+                        </div>
+                        <div class="query-item">
+                            <div class="query-text">"Looking for a waterproof phone under $500"</div>
+                            <div class="query-meta">
+                                <span class="query-time">Today, 13:45</span>
+                                <span class="query-category">Electronics</span>
+                            </div>
+                        </div>
+                        <div class="query-item">
+                            <div class="query-text">"What's the best gaming headset with noise cancellation?"</div>
+                            <div class="query-meta">
+                                <span class="query-time">Today, 11:28</span>
+                                <span class="query-category">Gaming</span>
+                            </div>
+                        </div>
+                        <div class="query-item">
+                            <div class="query-text">"Recommend a budget-friendly 4K TV"</div>
+                            <div class="query-meta">
+                                <span class="query-time">Today, 10:12</span>
+                                <span class="query-category">Electronics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Query Categories</h2>
+                    <div class="chart" id="categoryChart">
+                        <!-- Chart placeholder - would be implemented with JavaScript charting library -->
+                        <img src="/api/placeholder/380/300" alt="Category Chart">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Product Suggestion Analysis</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Suggestion Count</th>
+                                <th>Click Rate</th>
+                                <th>Conversion Rate</th>
+                                <th>User Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UltraBook Pro X13</td>
+                                <td>342</td>
+                                <td>68%</td>
+                                <td>24%</td>
+                                <td>4.7/5</td>
+                            </tr>
+                            <tr>
+                                <td>LiteBook Air</td>
+                                <td>289</td>
+                                <td>54%</td>
+                                <td>21%</td>
+                                <td>4.5/5</td>
+                            </tr>
+                            <tr>
+                                <td>PowerPro Gaming Laptop</td>
+                                <td>176</td>
+                                <td>72%</td>
+                                <td>31%</td>
+                                <td>4.8/5</td>
+                            </tr>
+                            <tr>
+                                <td>EcoBook 14</td>
+                                <td>143</td>
+                                <td>42%</td>
+                                <td>18%</td>
+                                <td>4.2/5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="action-bar">
+        <!-- <button class="action-button primary">Run Analytics</button> -->
+        <button class="action-button primary">Export Data</button>
+        <!-- <button class="action-button">Model Settings</button> -->
+    </div>
+</body>
+</html>

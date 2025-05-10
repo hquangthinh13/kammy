@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
             suggestionDiv.classList.add('product-suggestion');
             
             suggestionDiv.innerHTML = `
-                <img src="/api/placeholder/80/80" alt="${product.name}" class="product-image">
                 <div class="product-details">
                     <div class="product-name">${product.name}</div>
                     <div class="product-description">${product.description}</div>
